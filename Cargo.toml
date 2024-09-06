@@ -1,0 +1,21 @@
+[package]
+name = "file-monitor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+notify = "6.0" #  For file system monitoring.
+lettre = "0.10.0-rc.3" # For sending emails.
+log = "0.4" # For logging.
+env_logger = "0.9" # For logging.
+serde = { version = "1.0", features = ["derive"] } # For serialization and deserialization.
+toml = "0.5" # For parsing TOML files.
+ctrlc = "3.2" # For handling Ctrl+C events.
+egui = "0.22.0"
+eframe = "0.22.0"
+winapi = { version = "0.3.9", features = ["winuser"] }
+
+[dev-dependencies]
+assert_cmd = "2.0" # For integration testing
